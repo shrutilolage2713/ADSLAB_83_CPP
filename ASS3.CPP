@@ -56,9 +56,18 @@ int main()
     int n;
     cout << "Enter number of trailing zeros: ";
     cin >> n;
+    
+    if(n==5)
+    {
+        cout<<"\n There is no number having 5 zeros at the end...! ";
+    }
+    else
+    {
+        int result = findNumberWithTrailingZeros(n);
+        cout << "Smallest number whose factorial has at least " << n << " trailing zeros is: " << result << endl;
 
-    int result = findNumberWithTrailingZeros(n);
-    cout << "Smallest number whose factorial has at least " << n << " trailing zeros is: " << result << endl;
+    }
+
 
     return 0;
 }
